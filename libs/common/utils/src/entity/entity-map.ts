@@ -1,0 +1,17 @@
+export const entityMap = {
+  Author: 189640,
+  Book: 189480,
+  BookRating: 212998,
+  BookStoreDepartment: 189473,
+  Characters: 212103,
+  Employee: 189474,
+  Genre: 189478,
+  Isbn: 189556,
+  Manager: 189475,
+  Price: 189554,
+  Publisher: 189639,
+  SalesData: 189553,
+  Section: 189476,
+  Seller: 194053,
+  Timestamp: 161376,
+};
