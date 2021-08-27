@@ -1,0 +1,10 @@
+{
+  "companyName": "Antorcha BookStore",
+  "defaultHomePage": "/best-seller",
+  "exportConfig": "KleeenInfusion",
+  "layout": {
+    "position": "nav-top"
+  },
+  "productName": "Book Store",
+  "crossLinkingInteraction": "Context menu"
+}

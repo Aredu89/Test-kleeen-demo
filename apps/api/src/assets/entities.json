@@ -1,0 +1,893 @@
+[
+  {
+    "name": "Timestamp",
+    "formatType": "timestamp",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "format": {},
+        "formatType": "timestamp",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "timestamp"
+      }
+    }
+  },
+  {
+    "name": "BookStoreDepartment",
+    "description": "",
+    "formatType": "prime",
+    "initialQuantity": 1,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Sales"
+          ]
+        },
+        "formatType": "prime",
+        "name": "displayValue",
+        "params": [
+          [
+            "Sales"
+          ]
+        ],
+        "statisticalType": "Data - Categorical",
+        "type": "oneOfEach"
+      },
+      "seller": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Seller One",
+            "Seller Two",
+            "Seller Three",
+            "Seller Four",
+            "Seller Five"
+          ]
+        },
+        "formatType": "prime",
+        "name": "seller",
+        "params": [
+          "Seller",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical",
+        "type": "arrayOf"
+      },
+      "salesData": {
+        "description": "",
+        "format": {
+          "max": 9999,
+          "min": 0
+        },
+        "formatType": "integer",
+        "name": "salesData",
+        "params": [
+          "SalesData",
+          20,
+          [
+            0,
+            9999
+          ]
+        ],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "arrayOf"
+      },
+      "manager": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "manager",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Manager"
+      },
+      "section": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Academic",
+            "Literature",
+            "Linguistics",
+            "Health",
+            "Society",
+            "History"
+          ]
+        },
+        "formatType": "prime",
+        "name": "section",
+        "params": [
+          "Section",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical",
+        "type": "arrayOf"
+      },
+      "employee": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "employee",
+        "params": [
+          "Employee",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      }
+    }
+  },
+  {
+    "name": "Employee",
+    "description": "",
+    "formatType": "full_name",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "full_name"
+      },
+      "bookStoreDepartment": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Sales"
+          ]
+        },
+        "formatType": "prime",
+        "name": "bookStoreDepartment",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "BookStoreDepartment"
+      },
+      "timestamp": {
+        "format": {
+          "dateTime": {
+            "day": "2-digit",
+            "month": "2-digit",
+            "year": "numeric"
+          }
+        },
+        "formatType": "timestamp",
+        "name": "timestamp",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "Timestamp"
+      }
+    }
+  },
+  {
+    "name": "Manager",
+    "description": "",
+    "formatType": "full_name",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "full_name"
+      },
+      "bookStoreDepartment": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Sales"
+          ]
+        },
+        "formatType": "prime",
+        "name": "bookStoreDepartment",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "BookStoreDepartment"
+      },
+      "timestamp": {
+        "format": {
+          "dateTime": {
+            "day": "2-digit",
+            "month": "2-digit",
+            "year": "numeric"
+          }
+        },
+        "formatType": "timestamp",
+        "name": "timestamp",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "Timestamp"
+      }
+    }
+  },
+  {
+    "name": "Section",
+    "description": "",
+    "formatType": "prime",
+    "initialQuantity": 6,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Academic",
+            "Literature",
+            "Linguistics",
+            "Health",
+            "Society",
+            "History"
+          ]
+        },
+        "formatType": "prime",
+        "name": "displayValue",
+        "params": [
+          [
+            "Academic",
+            "Literature",
+            "Linguistics",
+            "Health",
+            "Society",
+            "History"
+          ]
+        ],
+        "statisticalType": "Data - Categorical",
+        "type": "oneOfEach"
+      },
+      "genre": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Self-help",
+            "Autobiography",
+            "Science fiction",
+            "Scientific",
+            "Classic",
+            "Comedy",
+            "Comic; Graphic Novel",
+            "Crime",
+            "Drama",
+            "Fantasy",
+            "Fiction",
+            "Guides and manuals",
+            "History",
+            "Horror",
+            "Mystery",
+            "Mythology",
+            "Tragedy"
+          ]
+        },
+        "formatType": "prime",
+        "name": "genre",
+        "params": [
+          "Genre",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical",
+        "type": "arrayOf"
+      },
+      "bookStoreDepartment": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Sales"
+          ]
+        },
+        "formatType": "prime",
+        "name": "bookStoreDepartment",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "BookStoreDepartment"
+      }
+    }
+  },
+  {
+    "name": "Genre",
+    "description": "",
+    "formatType": "prime",
+    "initialQuantity": 17,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Self-help",
+            "Autobiography",
+            "Science fiction",
+            "Scientific",
+            "Classic",
+            "Comedy",
+            "Comic; Graphic Novel",
+            "Crime",
+            "Drama",
+            "Fantasy",
+            "Fiction",
+            "Guides and manuals",
+            "History",
+            "Horror",
+            "Mystery",
+            "Mythology",
+            "Tragedy"
+          ]
+        },
+        "formatType": "prime",
+        "name": "displayValue",
+        "params": [
+          [
+            "Self-help",
+            "Autobiography",
+            "Science fiction",
+            "Scientific",
+            "Classic",
+            "Comedy",
+            "Comic; Graphic Novel",
+            "Crime",
+            "Drama",
+            "Fantasy",
+            "Fiction",
+            "Guides and manuals",
+            "History",
+            "Horror",
+            "Mystery",
+            "Mythology",
+            "Tragedy"
+          ]
+        ],
+        "statisticalType": "Data - Categorical",
+        "type": "oneOfEach"
+      },
+      "book": {
+        "description": "",
+        "format": {},
+        "formatType": "title",
+        "name": "book",
+        "params": [
+          "Book",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "section": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Academic",
+            "Literature",
+            "Linguistics",
+            "Health",
+            "Society",
+            "History"
+          ]
+        },
+        "formatType": "prime",
+        "name": "section",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "Section"
+      }
+    }
+  },
+  {
+    "name": "Book",
+    "description": "",
+    "formatType": "title",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "title",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "title"
+      },
+      "bookRating": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "severityBad": 1,
+          "severityGood": 100,
+          "severityLevels": 3
+        },
+        "formatType": "severity_score",
+        "name": "bookRating",
+        "params": [
+          1,
+          100
+        ],
+        "statisticalType": "Data - Numeric - NTG - Severity Ranking",
+        "type": "BookRating"
+      },
+      "characters": {
+        "description": "",
+        "format": {},
+        "formatType": "first_name",
+        "name": "characters",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Characters"
+      },
+      "publisher": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Random House",
+            "HarperCollins",
+            "Simon & Schuster",
+            "Penguin Group",
+            "Houghton Mifflin Harcourt",
+            "ACEN Editorial",
+            "BioGea Ediciones",
+            "Tirant Lo Blanch",
+            "Akal",
+            "Errata Naturae",
+            "Hachette Livre",
+            "Scholastic Corporation",
+            "Bertelsmann"
+          ]
+        },
+        "formatType": "string",
+        "name": "publisher",
+        "params": [
+          "Publisher",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      },
+      "author": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "author",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Author"
+      },
+      "isbn": {
+        "description": "",
+        "format": {
+          "examples": [
+            "9781234567897",
+            "978-1-60309-025-4",
+            "978-1-60309-016-2",
+            "978-1-60309-442-9",
+            "978-1-60309-085-8",
+            "978-1-60309-075-9",
+            "978-1-60309-370-5",
+            "978-1-60309-445-0",
+            "978-1-60309-502-0",
+            "978-1-60309-490-0",
+            "978-0-9801023-1-4",
+            "978-1-60309-045-2"
+          ]
+        },
+        "formatType": "prime",
+        "name": "isbn",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "Isbn"
+      },
+      "price": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "price",
+        "params": [
+          "Price",
+          20,
+          [
+            1,
+            100
+          ]
+        ],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "arrayOf"
+      },
+      "timestamp": {
+        "format": {
+          "dateTime": {
+            "day": "2-digit",
+            "month": "2-digit",
+            "year": "numeric"
+          }
+        },
+        "formatType": "timestamp",
+        "name": "timestamp",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "Timestamp"
+      },
+      "genre": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Self-help",
+            "Autobiography",
+            "Science fiction",
+            "Scientific",
+            "Classic",
+            "Comedy",
+            "Comic; Graphic Novel",
+            "Crime",
+            "Drama",
+            "Fantasy",
+            "Fiction",
+            "Guides and manuals",
+            "History",
+            "Horror",
+            "Mystery",
+            "Mythology",
+            "Tragedy"
+          ]
+        },
+        "formatType": "prime",
+        "name": "genre",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "Genre"
+      }
+    }
+  },
+  {
+    "name": "SalesData",
+    "description": "",
+    "formatType": "integer",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "max": 9999,
+          "min": 0
+        },
+        "formatType": "integer",
+        "name": "displayValue",
+        "params": [
+          0,
+          9999
+        ],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "integer"
+      },
+      "bookStoreDepartment": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Sales"
+          ]
+        },
+        "formatType": "prime",
+        "name": "bookStoreDepartment",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "BookStoreDepartment"
+      }
+    }
+  },
+  {
+    "name": "Price",
+    "description": "",
+    "formatType": "USD",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "prefix": "$",
+          "suffix": "k"
+        },
+        "formatType": "USD",
+        "name": "displayValue",
+        "params": [
+          1,
+          100
+        ],
+        "statisticalType": "Data - Numeric - NTG - Discrete",
+        "type": "integer"
+      },
+      "book": {
+        "description": "",
+        "format": {},
+        "formatType": "title",
+        "name": "book",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Book"
+      },
+      "timestamp": {
+        "format": {
+          "dateTime": {
+            "day": "2-digit",
+            "month": "2-digit",
+            "year": "numeric"
+          }
+        },
+        "formatType": "timestamp",
+        "name": "timestamp",
+        "params": [],
+        "statisticalType": "Data - Numeric - Temporal",
+        "type": "Timestamp"
+      }
+    }
+  },
+  {
+    "name": "Isbn",
+    "description": "",
+    "formatType": "prime",
+    "initialQuantity": 12,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "examples": [
+            "9781234567897",
+            "978-1-60309-025-4",
+            "978-1-60309-016-2",
+            "978-1-60309-442-9",
+            "978-1-60309-085-8",
+            "978-1-60309-075-9",
+            "978-1-60309-370-5",
+            "978-1-60309-445-0",
+            "978-1-60309-502-0",
+            "978-1-60309-490-0",
+            "978-0-9801023-1-4",
+            "978-1-60309-045-2"
+          ]
+        },
+        "formatType": "prime",
+        "name": "displayValue",
+        "params": [
+          [
+            "9781234567897",
+            "978-1-60309-025-4",
+            "978-1-60309-016-2",
+            "978-1-60309-442-9",
+            "978-1-60309-085-8",
+            "978-1-60309-075-9",
+            "978-1-60309-370-5",
+            "978-1-60309-445-0",
+            "978-1-60309-502-0",
+            "978-1-60309-490-0",
+            "978-0-9801023-1-4",
+            "978-1-60309-045-2"
+          ]
+        ],
+        "statisticalType": "Data - Categorical",
+        "type": "oneOfEach"
+      },
+      "book": {
+        "description": "",
+        "format": {},
+        "formatType": "title",
+        "name": "book",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Book"
+      }
+    }
+  },
+  {
+    "name": "Publisher",
+    "description": "",
+    "formatType": "string",
+    "initialQuantity": 13,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Random House",
+            "HarperCollins",
+            "Simon & Schuster",
+            "Penguin Group",
+            "Houghton Mifflin Harcourt",
+            "ACEN Editorial",
+            "BioGea Ediciones",
+            "Tirant Lo Blanch",
+            "Akal",
+            "Errata Naturae",
+            "Hachette Livre",
+            "Scholastic Corporation",
+            "Bertelsmann"
+          ]
+        },
+        "formatType": "string",
+        "name": "displayValue",
+        "params": [
+          [
+            "Random House",
+            "HarperCollins",
+            "Simon & Schuster",
+            "Penguin Group",
+            "Houghton Mifflin Harcourt",
+            "ACEN Editorial",
+            "BioGea Ediciones",
+            "Tirant Lo Blanch",
+            "Akal",
+            "Errata Naturae",
+            "Hachette Livre",
+            "Scholastic Corporation",
+            "Bertelsmann"
+          ]
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "oneOfEach"
+      },
+      "book": {
+        "description": "",
+        "format": {},
+        "formatType": "title",
+        "name": "book",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Book"
+      }
+    }
+  },
+  {
+    "name": "Author",
+    "description": "",
+    "formatType": "full_name",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "full_name",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "full_name"
+      },
+      "book": {
+        "description": "",
+        "format": {},
+        "formatType": "title",
+        "name": "book",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Book"
+      }
+    }
+  },
+  {
+    "name": "Seller",
+    "description": "",
+    "formatType": "prime",
+    "initialQuantity": 5,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Seller One",
+            "Seller Two",
+            "Seller Three",
+            "Seller Four",
+            "Seller Five"
+          ]
+        },
+        "formatType": "prime",
+        "name": "displayValue",
+        "params": [
+          [
+            "Seller One",
+            "Seller Two",
+            "Seller Three",
+            "Seller Four",
+            "Seller Five"
+          ]
+        ],
+        "statisticalType": "Data - Categorical",
+        "type": "oneOfEach"
+      },
+      "bookStoreDepartment": {
+        "description": "",
+        "format": {
+          "examples": [
+            "Sales"
+          ]
+        },
+        "formatType": "prime",
+        "name": "bookStoreDepartment",
+        "params": [],
+        "statisticalType": "Data - Categorical",
+        "type": "BookStoreDepartment"
+      }
+    }
+  },
+  {
+    "name": "Characters",
+    "description": "",
+    "formatType": "first_name",
+    "initialQuantity": 50,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {},
+        "formatType": "first_name",
+        "name": "displayValue",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "first_name"
+      },
+      "book": {
+        "description": "",
+        "format": {},
+        "formatType": "title",
+        "name": "book",
+        "params": [],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "Book"
+      }
+    }
+  },
+  {
+    "name": "BookRating",
+    "description": "",
+    "formatType": "severity_score",
+    "initialQuantity": 3,
+    "properties": {
+      "displayValue": {
+        "description": "",
+        "format": {
+          "max": 100,
+          "min": 1,
+          "severityBad": 1,
+          "severityGood": 100,
+          "severityLevels": 3
+        },
+        "formatType": "severity_score",
+        "name": "displayValue",
+        "params": [
+          1,
+          100,
+          {
+            "severityGood": 100,
+            "severityBad": 1,
+            "severityLevels": 3
+          }
+        ],
+        "statisticalType": "Data - Numeric - NTG - Severity Ranking",
+        "type": "severity_score"
+      },
+      "book": {
+        "description": "",
+        "format": {},
+        "formatType": "title",
+        "name": "book",
+        "params": [
+          "Book",
+          20,
+          []
+        ],
+        "statisticalType": "Data - Categorical - free form",
+        "type": "arrayOf"
+      }
+    }
+  }
+]
